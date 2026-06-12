@@ -1,0 +1,4 @@
+# Only the static site files are needed on Vercel
+OpenELIS-Global-2
+dist
+*.sh

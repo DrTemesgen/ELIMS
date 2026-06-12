@@ -7,3 +7,5 @@ dist/
 # OS noise
 Thumbs.db
 desktop.ini
+
+.vercel
