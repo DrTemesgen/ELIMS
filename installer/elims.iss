@@ -5,7 +5,7 @@
 [Setup]
 AppName=ELIMS
 AppVersion=0.1.0
-AppPublisher=ASLM 2026 ELIMS Project
+AppPublisher=Dr. Temesgen Endalew - ELIMS Project
 AppPublisherURL=https://github.com/DrTemesgen/ELIMS
 DefaultDirName={sd}\ELIMS
 DisableProgramGroupPage=yes

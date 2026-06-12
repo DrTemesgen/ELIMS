@@ -1,12 +1,12 @@
 # ELIMS — Electronic Laboratory Information Management System
 
-A laboratory information management system for the **ASLM 2026** initiative, built on
+An open-source laboratory information management system built on
 [OpenELIS Global 2](https://github.com/DIGI-UW/OpenELIS-Global-2) — the open-source,
 enterprise-grade LIS used by public health laboratories worldwide.
 
 > **Status:** 🟢 Active development — running as a local deployment (demo/evaluation phase).
 > The live system is hosted on the project workstation and is available when it is online.
-> Cloud hosting for the ASLM 2026 showcase is planned.
+> Cloud hosting for a public showcase is planned.
 
 ## What this is
 
@@ -82,7 +82,7 @@ installer\build-offline-bundle.ps1   # build dist\offline\ USB bundle (~5.5 GB)
 - [ ] Test catalog & lab sections for the target laboratory profile
 - [ ] Branding, report formats, localization
 - [ ] Analyzer interfacing (via OpenELIS plugins / analyzer bridge)
-- [ ] Cloud hosting + domain + TLS for the ASLM 2026 showcase
+- [ ] Cloud hosting + domain + TLS for the public showcase
 
 ## License
 
