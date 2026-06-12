@@ -51,9 +51,22 @@ ELIMS/
 
 Default credentials are OpenELIS defaults — change them before any real use.
 
+## Windows installer
+
+ELIMS packages as a normal Windows application: `ELIMS-Setup.exe` installs the
+whole system (Docker-based) with Start Menu icons, runs fully offline, and
+updates itself when internet is available. An offline USB bundle carries the
+~5.5 GB of images for zero-internet installs. See [docs/INSTALLER.md](docs/INSTALLER.md).
+
+```powershell
+installer\build-installer.ps1        # build dist\ELIMS-Setup.exe (~2 MB)
+installer\build-offline-bundle.ps1   # build dist\offline\ USB bundle (~5.5 GB)
+```
+
 ## Roadmap
 
 - [x] Stand up OpenELIS Global 2 locally (Docker-in-WSL2)
+- [x] Windows installer (lean + offline USB bundle), update mechanism
 - [ ] Demo dataset (fictional patients, realistic results)
 - [ ] Test catalog & lab sections for the target laboratory profile
 - [ ] Branding, report formats, localization
