@@ -1,0 +1,16 @@
+# ELIMS local override — copy this file into OpenELIS-Global-2/ next to docker-compose.yml.
+#
+# Why: the project workstation runs Apache inside WSL Ubuntu, which occupies host
+# ports 80, 443, 8080 and 8443. OpenELIS is therefore published on alternate ports.
+#   Main UI:        https://localhost:9443
+#   HTTP redirect:  http://localhost:8090
+#   Webapp direct:  https://localhost:8445  (container 8443)
+services:
+    proxy:
+        ports: !override
+            - "8090:80"
+            - "9443:443"
+    oe.openelis.org:
+        ports: !override
+            - "8082:8080"
+            - "8445:8443"
