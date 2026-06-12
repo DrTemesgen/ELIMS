@@ -51,6 +51,17 @@ ELIMS/
 
 Default credentials are OpenELIS defaults — change them before any real use.
 
+## 📥 Download
+
+| Flavor | Size | Internet during install | Get it |
+|---|---|---|---|
+| **Lean installer** | 2 MB | Yes — downloads ~1.9 GB | [GitHub release v0.1.0](https://github.com/DrTemesgen/ELIMS/releases/tag/v0.1.0) |
+| **Offline / USB bundle** | 1.9 GB | **None** | [Google Drive folder](https://drive.google.com/drive/folders/1sDvfEBUW4uRrJWk_jAm-BZUIYgX7rZ2j?usp=sharing) |
+
+Access to the offline bundle follows the project's sharing policy on the Drive
+folder. Prerequisite on every target PC: WSL2 with Ubuntu — one command + reboot,
+see [docs/INSTALLER.md](docs/INSTALLER.md).
+
 ## Windows installer
 
 ELIMS packages as a normal Windows application: `ELIMS-Setup.exe` installs the
