@@ -22,6 +22,9 @@ Copy-Item (Join-Path $clone "volume") (Join-Path $dist "volume") -Recurse
 New-Item -ItemType Directory -Force (Join-Path $dist "configuration") | Out-Null
 "" | Out-File -Encoding ascii (Join-Path $dist "configuration\.keep")
 
+# License/attribution notice ships with every installed copy
+Copy-Item (Join-Path $repo "NOTICE.md") $dist
+
 # Operating scripts + installer logic
 Copy-Item (Join-Path $repo "scripts") (Join-Path $dist "scripts") -Recurse
 New-Item -ItemType Directory -Force (Join-Path $dist "installer") | Out-Null
